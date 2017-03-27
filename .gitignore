@@ -1,0 +1,31 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+.DS_Store
+npm-debug.log
+/src/main/resources/static/*.js
+/src/main/resources/static/*.map
+/frontend/node_modules
+/frontend/tmp
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
