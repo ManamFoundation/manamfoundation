@@ -14,4 +14,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.authorizeRequests().mvcMatchers("/").permitAll();
         httpSecurity.csrf().disable();
     }
+
+   /* public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/frontend/app/images*//**")
+                .addResourceLocations("file:frontend/app/images/")
+                .setCachePeriod(0);
+    }*/
 }

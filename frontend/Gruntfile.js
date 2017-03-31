@@ -116,5 +116,4 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['clean', 'html2js', 'uglify', 'copy:generatedFilesToBuild']);
 
     grunt.registerTask('task', ['availabletasks']);
-    grunt.registerTask('tasks', ['availabletasks']);
 }

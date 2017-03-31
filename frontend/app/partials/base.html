@@ -1,49 +1,134 @@
-<div id='base' class="" data-ng-controller="UserController" data-ng-init="init()">
+<head>
+    <title>Manam Foundation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    body{
+    background-color:orange;
+    color: white;
+    height: 100%;
+    }
 
-    <div>
-        <h1>Manam Foundation</h1>
-        "Nenu anukunte oka adugu", "MANAM anukunte mundadugu"
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
 
-        MANAM foundation is non government Organization which is working on basic rights of children and orphans and
-        poor people to give them a better future.
+    /* Set gray background color and 100% height */
+    .sidenav {
+      color: white;
+      padding-top: 100px;
+    }
 
-        MANAM foundation main mission is to provide food, shelter to poor people , orphans and kids and physically and
-        mentally challenged people and also MANAM foundation takes care about health of kids by providing proper food.
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: black;
+      color: white;
+      padding: 15px;
+    }
 
-        MANAM foundation main objective is make society better in terms of education and health for kids and orphans and
-        poor people especially old age people , physically and mentally challenged .
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
 
-        MANAM does below services :-
-
-        Manam Services:
-
-        1) Helping Orphan kids
-        2) Helping old age people such as donating clothes
-        3) Serving people at time of Natural disasters such as flood
-        4) serving poor in need
-        5) helping in eradicating unemployment
-        6) teaching cancer and AIDS kids
-        7) helping mentally ill and handicapped people.
-        8) Helping GULF related victims
-        9) Food & water distribution camps in bustands schools and Temples n MELA's
-        10. Blood donation services
-
-        The man behind this noble cause is Shri Kumar & Friends(Team)who is working as a Software Engineer.He started
-        MANAM foundation in 2017
-        with intension to serve poor people and old age people to make better society in future.
-
-
-        Past-Present-Future(MANAM):
-
-        Past is which can never be changed
-
-        Future is which can never be expected
-
-        So,concentrate on present which decides future and makes a big difference for past too
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
     </div>
+</nav>
 
-    <div ng-repeat="user in users">
-        FirstName : {{user.firstName}}
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <ul class="text-left">
+                <p><a href="#">Join us</a></p>
+                <p><a href="#">Contact us</a></p>
+                <p><a href="#">Email us</a></p>
+            </ul>
+        </div>
+        <div class="col-sm-8 md text-left" >
+            <div class="text-center">
+                <h3>Manam Foundation
+                    <p><small>"You and I = We"</small></p></h3>
+            </div>
+            <p>"Nenu anukunte oka adugu", "MANAM anukunte mundadugu"
+                MANAM foundation is non government Organization which is working on basic rights of children and orphans and
+                poor people to give them a better future.
+                MANAM foundation main mission is to provide food, shelter to poor people , orphans and kids and physically and
+                mentally challenged people and also MANAM foundation takes care about health of kids by providing proper food.
+                MANAM foundation main objective is make society better in terms of education and health for kids and orphans and
+                poor people especially old age people , physically and mentally challenged.</p>
+
+            <h3>Manam Services:</h3>
+
+            <p> 1) Helping Orphan kids.</p>
+            <p> 2) Helping old age people such as donating clothes.</p>
+            <p> 3) Serving people at time of Natural disasters such as flood.</p>
+            <p> 4) serving poor in need.</p>
+            <p> 5) helping in eradicating unemployment.</p>
+            <p> 6) teaching cancer and AIDS kids.</p>
+            <p> 7) helping mentally ill and handicapped people.</p>
+            <p>8) Helping GULF related victims.</p>
+            <p>9) Food & water distribution camps in bustands schools and Temples.</p>
+            <p>10)Blood donation service.</p>
+
+            <p> The man behind this noble cause is <code>Shri Kumar & Friends(Team) </code>.who is working as a Software Engineer.He started
+                MANAM foundation in 2
+                with intention to serve poor people and old age people to make the better society in future. </p>
+
+            <h3>   Past-Present-Future(Manam): </h3>
+
+            <div class="text-left">
+                <p>   Past is which can never be changed.</p>
+                <p>   Future is which can never be expected.</p>
+                <p>   So,concentrate on present which decides future and makes a big difference for past too </p>
+            </div>
+        </div>
+
+        <div class="col-sm-2 sidenav">
+            <ul class="text-left">
+                <p><a href="#">People</a></p>
+                <p><a href="#">Team</a></p>
+            </ul>
+        </div>
+
     </div>
-
 </div>
+
+<footer class="container-fluid text-center">
+    <p><span class="glyphicon glyphicon-copyright-mark">ManamFoundation</span></p>
+</footer>
+
+</body>
