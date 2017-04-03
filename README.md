@@ -18,10 +18,11 @@ Project uses AngularJS
     $ gradlew nodesetup
 
    To Install node packages from package.json
-    $ cd frontend
+   
     $ gradlew npmInstall
 
    To Build the frontend package.
+    $ cd frontend
     $ grunt (runs the Gruntfile.js)
 
     To run the application from CMD
