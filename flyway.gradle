@@ -4,9 +4,9 @@ task flywayTestConfiguration(
         group: 'flyway configuration',
         description: 'Sets flyway test database configuration properties.') {
     doLast {
-        project.ext['flyway.user'] = 'root'
-        project.ext['flyway.url'] = 'jdbc:mysql://localhost/spring'
-        project.ext['flyway.password'] = 'password'
+        project.ext['flyway.user'] = 'jayapal'
+        project.ext['flyway.url'] = 'jdbc:mysql://localhost:3306/spring'
+        project.ext['flyway.password'] = 'jayapal'
         project.ext['flyway.locations'] = 'db/migration'
     }
 }
@@ -15,9 +15,9 @@ task flywayDevConfiguration(
         group: 'flyway configuration',
         description: 'Sets flyway dev database configuration properties.') {
     doLast {
-        project.ext['flyway.user'] = 'root'
-        project.ext['flyway.url'] = 'jdbc:mysql://localhost/spring'
-        project.ext['flyway.password'] = 'password'
+        project.ext['flyway.user'] = 'jayapal'
+        project.ext['flyway.url'] = 'jdbc:mysql://localhost:3306/spring'
+        project.ext['flyway.password'] = 'jayapal'
         project.ext['flyway.locations'] = 'db/migration'
     }
 }

@@ -1,0 +1,11 @@
+applications:
+- name: mf
+  memory: 512M
+  host: manamfoundation
+  buildpack: java_buildpack
+  domain: cfapps.io
+  path: ../build/libs/manamfoundation-0.0.1.jar
+  env:
+    spring_datasource_url: jdbc:mysql://us-cdbr-iron-east-03.cleardb.net/ad_530e4a2c4aa1d83
+    spring_datasource_username: b4034e9e5717bd
+    spring_datasource_password: 494be5a7

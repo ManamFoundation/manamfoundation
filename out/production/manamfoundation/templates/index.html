@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+
+<html lang="en" ng-app="ManamApp" id="ng-app" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title ng-bind="title">Manam Foundation</title>
+
+    <script th:src="@{/thirdParty.js}"></script>
+    <script th:src="@{/manam.js}"></script>
+
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-96200859-2', 'auto');
+          ga('send', 'pageview');
+    </script>
+
+</head>
+<body >
+<div data-ui-view=""/></body>
+</html>

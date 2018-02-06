@@ -3,17 +3,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
+
     body{
     background-color:orange;
-    color: white;
+    color: black;
     height: 100%;
     }
 
@@ -22,8 +21,11 @@
 
     /* Set gray background color and 100% height */
     .sidenav {
-      color: white;
       padding-top: 100px;
+    }
+    .sidenav p a{
+    color: black;
+
     }
 
     /* Set black background color, white text and some padding */
@@ -31,6 +33,21 @@
       background-color: black;
       color: white;
       padding: 15px;
+      bottom:0;
+      left:0;
+      right:0;
+    }
+
+    .nav.navbar-nav.navbar-right li a {
+    color: orange;
+    }
+
+    .nav.navbar-header.navbar-brand a {
+    color: orange;
+    }
+
+    .nav.navbar-nav li a {
+    color: orange;
     }
 
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -56,9 +73,9 @@
             <a class="navbar-brand" href="#">Logo</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+            <ul class="nav navbar-nav" >
+                <li><a href="#">Home</a></li>
+                <li><a href="#" >About</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Events</a></li>
             </ul>
@@ -72,16 +89,16 @@
 <div class="container-fluid text-center">
     <div class="row content">
         <div class="col-sm-2 sidenav">
-            <ul class="text-left">
-                <p><a href="#">Join us</a></p>
-                <p><a href="#">Contact us</a></p>
-                <p><a href="#">Email us</a></p>
-            </ul>
+            <div class="text-center">
+                <p><a href="#"><code>Join us</code></a></p>
+                <p><a href="#"><code>Contact us</code></a></p>
+                <p><a href="#"><code>Gallery</code></a></p>
+            </div>
         </div>
         <div class="col-sm-8 md text-left" >
             <div class="text-center">
                 <h3>Manam Foundation
-                    <p><small>"You and I = We"</small></p></h3>
+                    <p><small>"make the world better than yesterday"</small></p></h3>
             </div>
             <p>"Nenu anukunte oka adugu", "MANAM anukunte mundadugu"
                 MANAM foundation is non government Organization which is working on basic rights of children and orphans and
@@ -104,7 +121,7 @@
             <p>9) Food & water distribution camps in bustands schools and Temples.</p>
             <p>10)Blood donation service.</p>
 
-            <p> The man behind this noble cause is <code>Shri Kumar & Friends(Team) </code>.who is working as a Software Engineer.He started
+            <p> The man behind this noble cause is <Strong>Shri Kumar & Friends(Team) </Strong>.who is working as a Software Engineer.He started
                 MANAM foundation in 2
                 with intention to serve poor people and old age people to make the better society in future. </p>
 
@@ -118,10 +135,10 @@
         </div>
 
         <div class="col-sm-2 sidenav">
-            <ul class="text-left">
-                <p><a href="#">People</a></p>
-                <p><a href="#">Team</a></p>
-            </ul>
+            <div class="text-center" >
+                <p><a href="#"><code>People</code></a></p>
+                <p><a href="#"><code>Team</code></a></p>
+            </div>
         </div>
 
     </div>
